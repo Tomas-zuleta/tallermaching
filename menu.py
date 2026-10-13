@@ -1,18 +1,19 @@
-import os
-
 def mostrar_menu():
     print("\n--- MENU ---")
     print("1. Punto 17")
-    print("2. Punto 27")
-    print("3. Punto 29")
-    print("4. Salir")
+    print("2. Punto 26")
+    print("3. Punto 27")
+    print("4. Punto 29")
+    print("5. Salir")
 
 def ejecutar_opcion(opcion):
     archivos = {
         1: "punto17.py",
-        2: "punto27.py",
-        3: "punto29.py"
+        2: "punto26.py",
+        3: "punto27.py",
+        4: "punto29.py"
     }
+
     archivo = archivos.get(opcion)
     if archivo and os.path.exists(archivo):
         print(f"\nEjecutando {archivo}...\n")
